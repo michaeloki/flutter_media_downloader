@@ -314,6 +314,7 @@ class FlutterMediaDownloaderPlugin : FlutterPlugin, MethodCallHandler {
 
     private fun getMimeType(file: File): String? {
         val extension = file.extension
+        println("Testing...")
         return when (extension.toString().lowercase()) {
             "pdf" -> "application/pdf"
             "jpg", "jpeg", "png" -> "image/*"
